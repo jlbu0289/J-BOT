@@ -84,6 +84,30 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   `.trim(), m, m.mentionedJid ? {
   mentions: m.mentionedJid
   } : {})}
+  if (command == 'argentina') {
+  conn.reply(m.chat, `
+  _*${text.toUpperCase()}* *ES* *${(500).getRandom()}%* *${command.replace('how', '').toUpperCase()} 🗣️🇦🇷: CAMPEON DEL MUNDO PA        🌎🗣️: YA CANSAS CTMRE MUTEATE*_
+  `.trim(), m, m.mentionedJid ? {
+  mentions: m.mentionedJid
+  } : {})}
+  if (command == 'argentino') {
+  conn.reply(m.chat, `
+  _*${text.toUpperCase()}* *ES* *${(500).getRandom()}%* *${command.replace('how', '').toUpperCase()}🗣️🇦🇷: CAMPEON DEL MUNDO PA        🌎🗣️: YA CANSAS CTMRE MUTEATE*_
+  `.trim(), m, m.mentionedJid ? {
+  mentions: m.mentionedJid
+  } : {})}
+  if (command == 'boliviano') {
+  conn.reply(m.chat, `
+  _*${text.toUpperCase()}* *ES* *${(500).getRandom()}%* *${command.replace('how', '').toUpperCase()}QUE SE VAYA A NADAR EN SU MAR DE LAGRIMAS 🌊🌊*_
+  `.trim(), m, m.mentionedJid ? {
+  mentions: m.mentionedJid
+  } : {})}
+  if (command == 'boliviana') {
+  conn.reply(m.chat, `
+  _*${text.toUpperCase()}* *ES* *${(500).getRandom()}%* *${command.replace('how', '').toUpperCase()}QUE SE VAYA A NADAR EN SU MAR DE LAGRIMAS 🌊🌊*_
+  `.trim(), m, m.mentionedJid ? {
+  mentions: m.mentionedJid
+  } : {})}
   if (command == 'prostituta') {
   conn.reply(m.chat, `
   _*${text.toUpperCase()}* *ES* *${(500).getRandom()}%* *${command.replace('how', '').toUpperCase()} 🫦👅, QUIEN QUIERE DE SUS SERVICIOS? XD*_
@@ -91,7 +115,8 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
   mentions: m.mentionedJid
   } : {})}         
   }
-  handler.help = ['gay2', 'lesbiana', 'pajero', 'pajera', 'puto', 'puta', 'manco', 'manca', 'rata', 'prostituta', 'prostituto'].map(v => v + ' @tag | nombre')
+  handler.help = ['gay2', 'lesbiana', 'pajero', 'pajera', 'puto', 'puta', 'peruano', 'peruana', 'chilena', 'chileno', 'boliviano', 'boliviana', 'argentina', 'argentino', 'manco', 'manca', 'rata', 'prostituta', 'prostituto'].map(v => v + ' @tag | nombre')
   handler.tags = ['calculator']
-  handler.command = /^gay2|lesbiana|pajero|pajera|puto|puta|manco|manca|rata|prostituta|prostituto/i
+  handler.command = /^gay2|lesbiana|pajero|pajera|puto|puta|manco|manca|rata|peruano|peruana|chilena|chileno|boliviano|boliviana|argentina|argentino|prostituta|prostituto/i
   export default handler
+  
