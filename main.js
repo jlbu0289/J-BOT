@@ -81,7 +81,7 @@ global.loadDatabase = async function loadDatabase() {
 };
 loadDatabase();
 
-/* Creditos aJORGE BLAS (https://wa.me/51992621601) */
+/* Creditos a 𝙅𝙤𝙧𝙜𝙚 𝘽𝙡𝙖𝙨 (https://wa.me/+393476707620) */
 
 global.chatgpt = new Low(new JSONFile(path.join(__dirname, '/db/chatgpt.json')));
 global.loadChatgptDB = async function loadChatgptDB() {
