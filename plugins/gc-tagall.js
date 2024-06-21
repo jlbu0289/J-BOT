@@ -5,7 +5,7 @@ throw false
 }
 let pesan = args.join` `
 let oi = `*𝙼𝙴𝙽𝚂𝙰𝙹𝙴:* ${pesan}`
-let teks = `🔊 BIENVENIDOS A TODOS ➡️ Wa.me/+393476707620
+let teks = `🔊 BIENVENIDOS A TODOS ➡️ 
 *⺀🥵Buen@s días espero que hayan amanecido bien⺀*\n\n❄️ ${oi}\n\n❄️ *@osito_123:*\n`
 for (let mem of participants) {
 teks += `🇨🇳👁️ @${mem.id.split('@')[0]}\n`}
