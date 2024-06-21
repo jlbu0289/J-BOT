@@ -72,6 +72,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 ┣ ඬ⃟🔊 _UwU_
 ┣ ඬ⃟🔊 _:c_
 ┣ ඬ⃟🔊 _a_
+  ඬ⃟🔊 _aguante-talleres_ 
 ┗━━━━━━━━━━━━━━━━┛`.trim();
     if (m.isGroup) {
       // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
