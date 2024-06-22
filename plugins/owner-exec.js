@@ -17,12 +17,12 @@ const handler = async (m, _2, msg, pickRandom, isOwner ) => {
   try {
     let i = 15;
     const f = {exports: {}};
-    const exec = new (async () => { }).constructor('print', 'm', 'handler', 'require', 'conn', 'Array', 'process', 'args', 'groupMetadata', 'module', 'exports', 'argument', _text);
+    const exec = new (async () => { }).constructor('print', 'm', 'require', 'conn', 'Array', 'process', 'args', 'groupMetadata', 'module', 'exports', 'argument', _text);
     _return = await exec.call(conn, (...args) => {
       if (--i < 1) return;
       console.log(...args);
       return conn.reply(m.chat, format(...args), m);
-    }, m, handler, require, conn, CustomArray, process, args, groupMetadata, f, f.exports, [conn, _2]);
+    }, m, require, conn, CustomArray, process, args, groupMetadata, f, f.exports, [conn, _2]);
   } catch (e) {
     const err = syntaxerror(_text, 'Execution Function', {allowReturnOutsideFunction: true, allowAwaitOutsideFunction: true, sourceType: 'module'});
     if (err) _syntax = '```' + err + '```\n\n';
